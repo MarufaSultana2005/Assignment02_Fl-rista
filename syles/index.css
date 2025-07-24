@@ -27,7 +27,7 @@ body {
 /* Nav Styles */
 
 nav {
-    margin: 60px 120px 54px 0;
+    margin: 60px 100px 54px 0;
     height: 140px;
     display: flex;
     justify-content: space-between;
@@ -66,4 +66,39 @@ nav {
     height: auto;
     width: 22px;
     color: rgb(88, 78, 45);
+}
+
+/* Banner Styles */
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 90px;
+}
+
+.fresh_flowers {
+    font-size: 65px;
+    font-weight: 700;
+    color: rgb(232, 180, 0);
+    font-family: var(--font2);
+}
+
+.always {
+    color: rgb(109, 94, 41);
+}
+
+.banner_description {
+    width: 540px;
+    margin-top: 12px;
+    font-family: var(--font1);
+    font-size: 22px;
+    line-height: 27px;
+    color: rgba(88, 78, 45, 0.72);
+}
+
+.banner_image {
+    display: block;
+    width: 570px;
+    border-radius: 0px 0px 10px 0px;
 }

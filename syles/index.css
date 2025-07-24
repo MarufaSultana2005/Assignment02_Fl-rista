@@ -3,6 +3,9 @@
 :root {
     --font1: "Inter", sans-serif;
     --font2: "Noto Serif", serif;
+
+    --gold: rgb(232, 180, 0);
+    --olive_brown: rgb(109, 94, 41);
 }
 
 * {
@@ -79,13 +82,13 @@ nav {
 
 .fresh_flowers {
     font-size: 65px;
-    font-weight: 700;
-    color: rgb(232, 180, 0);
+    font-weight: bold;
+    color: var(--gold);
     font-family: var(--font2);
 }
 
 .always {
-    color: rgb(109, 94, 41);
+    color: var(--olive_brown);
 }
 
 .banner_description {
@@ -101,4 +104,74 @@ nav {
     display: block;
     width: 570px;
     border-radius: 0px 0px 10px 0px;
+}
+
+/* Our Plants Styles */
+
+.our_plants_header {
+    text-align: center;
+    width: 830px;
+    margin: 0 auto;
+}
+
+.our_plants_title {
+    font-family: var(--font2);
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--olive_brown);
+}
+
+.our {
+    color: var(--gold);
+}
+
+.our_plants_description {
+    
+    font-family: var(--font1);
+    font-size: 22px;
+    line-height: 27px;
+    color: rgba(88, 78, 45, 0.89);
+    margin-top: 16px;
+    margin-bottom: 50px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    font-family: var(--font1);
+    text-align: center;
+}
+
+.flower_plants {
+    width: 270px;
+    height: 323px;
+    border-radius: 10px;
+    display: block;
+}
+
+h6 {
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(35, 28, 5, 0.83);
+    margin-top: 20px;
+}
+
+h5 {
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 10px;
+    color: rgba(35, 28, 5, 0.83);
+    margin-bottom: 20px;
+}
+
+.add_to_cart {
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    height: 50px;
+    margin-bottom: 10px;
+    font-weight: 750;
+    color: white;
+    background-color: var(--olive_brown);
 }

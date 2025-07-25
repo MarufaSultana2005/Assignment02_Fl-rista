@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --font1: "Inter", sans-serif;
-    --font2: "Noto Serif", serif;
+    /* --inter: "Inter", sans-serif; */
+    /* --noto: "Noto Serif", serif; */
 
+    --bg_color: rgb(253, 251, 242);
     --gold: rgb(232, 180, 0);
     --olive_brown: rgb(109, 94, 41);
+    --rich_olive_brown: rgb(109, 94, 41);
+    --dark_olive_brown: rgb(88, 78, 45);
+    --deep_olive: rgba(61, 52, 17, 0.6);
+    --mushroom_beige: rgba(121, 114, 92, 0.86);
 }
 
 * {
@@ -18,7 +23,7 @@ body {
     margin: auto;
     width: 1440px;
     padding: 0;
-    background-color: #FFFDF5;
+    background-color: var(--bg_color);
 }
 
 .container {
@@ -27,65 +32,87 @@ body {
     padding: 0;
 }
 
+/* Common Styles */
+
+.inter {
+    font-family: "Inter", sans-serif; 
+}
+
+.noto {
+    font-family: "Noto Serif", serif;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.center {
+    text-align: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.text-deco-none {
+    text-decoration: none;
+}
+
+.li-style-none {
+    list-style: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
 /* Nav Styles */
 
 nav {
     margin: 60px 100px 54px 0;
     height: 140px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .logo {
-    height: auto;
     width: 135px;
 }
 
 .nav_links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     gap: 48px;
 }
 
-.links {
-    list-style: none;
-}
-
 .nav_link {
-    display: flex;
-    align-items: center;
     gap: 5px;
-    text-decoration: none;
-    color: rgba(121, 114, 92, 0.86);
-    font-family: var(--font1);
+    color: var(--mushroom_beige);
 }
 
 .active {
-    color: #6D5E29;
+    color: var(--rich_olive_brown);
 }
 
 .cart {
-    height: auto;
     width: 22px;
-    color: rgb(88, 78, 45);
+    color: var(--dark_olive_brown);
 }
 
 /* Banner Styles */
 
 .banner {
-    display: flex;
-    justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 90px;
 }
 
 .fresh_flowers {
     font-size: 65px;
-    font-weight: bold;
     color: var(--gold);
-    font-family: var(--font2);
 }
 
 .always {
@@ -95,7 +122,6 @@ nav {
 .banner_description {
     width: 580px;
     margin-top: 12px;
-    font-family: var(--font1);
     font-size: 22px;
     line-height: 27px;
     color: rgba(88, 78, 45, 0.72);
@@ -110,15 +136,12 @@ nav {
 /* Our Plants Styles */
 
 .our_plants_header {
-    text-align: center;
     width: 830px;
     margin: 0 auto;
 }
 
 .our_plants_title {
-    font-family: var(--font2);
     font-size: 50px;
-    font-weight: bold;
     color: var(--olive_brown);
 }
 
@@ -127,8 +150,6 @@ nav {
 }
 
 .our_plants_description {
-    
-    font-family: var(--font1);
     font-size: 22px;
     line-height: 27px;
     color: rgba(88, 78, 45, 0.89);
@@ -140,8 +161,6 @@ nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    font-family: var(--font1);
-    text-align: center;
 }
 
 .flower_plants {
@@ -159,7 +178,6 @@ h6 {
 }
 
 h5 {
-    font-weight: bold;
     font-size: 22px;
     margin-top: 10px;
     color: rgba(35, 28, 5, 0.83);
@@ -175,28 +193,103 @@ h5 {
     font-weight: 750;
     color: white;
     background-color: var(--olive_brown);
+    transition: background-color 0.3s ease;
+}
+
+.add_to_cart:hover {
+  background-color: var(--gold);
+}
+
+.add_to_cart {
+    padding: 10px 20px;
+    background: var(--gold);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.add_to_cart:hover {
+    background-color: var(--olive_brown);
+}
+
+.alert-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+.alert-box {
+    background: var(--olive_brown);
+    color: white;
+    font-weight: 500;
+    padding: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    min-width: 450px;
+}
+
+#cart-alert:checked + .alert-overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    color: white;
+    font-size: 22px;
     cursor: pointer;
 }
 
 /* Styles for Flowers & Plants Lover */
 
 .flower_and_plants_lover {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     margin: 150px auto 0 auto;
 }
 
 .flower_lover_image {
     width: 540px;
-    height: auto;
     border-radius: 15px;
 }
 
+/* .trusted-badge {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  width: 80px;
+  height: 80px;
+  z-index: 10;
+}
+
+.trusted-badge::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 80px;
+  height: 80px;
+  background-image: url('/assets/trusted-badge.png');
+  background-size: contain;
+    background-repeat: no-repeat;
+  z-index: 2;
+}  */
+
 h3 {
     width: 540px;
-    font-family: var(--font2);
-    font-weight: bold;
     font-size: 50px;
     color: var(--olive_brown);
     margin: 0;
@@ -209,7 +302,6 @@ h3 {
     margin: 0;
     margin-left: 100px;
     color: rgba(59, 54, 35, 0.63);
-    font-family: var(--font1);
     font-size: 22px;
     line-height: 27px;
 }
@@ -218,13 +310,10 @@ h3 {
 
 .latest_deals {
     margin: 130px auto 0 auto;
-    text-align: center;
     width: 1140px;
 }
 
 .latest_deals_title {
-    font-family: var(--font2);
-    font-weight: bold;
     font-size: 50px;
     color: var(--olive_brown);
 }
@@ -235,7 +324,6 @@ h3 {
 
 .latest_deals_description {
     width: 900px;
-    font-family: var(--font1);
     font-size: 22px;
     line-height: 27px;
     color: rgba(59, 54, 35, 0.5);
@@ -255,7 +343,6 @@ h3 {
     color: white;
     font-weight: 600;
     font-size: 16px;
-    font-family: var(--font1);
     margin-top: 5px;
 }
 
@@ -264,28 +351,19 @@ h3 {
 }
 
 .latest_deals_spring {
-    background-image: url(/assets/SpringBloom.jpg);
-    color: white;
-    font-family: var(--font2);
-    font-weight: bold;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(/assets/SpringBloom.jpg);
     font-size: 1.2rem;
 }
 
 .latest_deals_indoor {
-    background-image: url(/assets/IndoorPlants.webp);
-    color: white;
-    font-family: var(--font2);
-    font-weight: bold;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/IndoorPlants.webp);
     font-size: 1.2rem;
 }
 
 .latest_deals_backyard {
-    background-image: url(/assets/Backyard_Bloom.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/assets/Backyard_Bloom.jpg);
     grid-column: 2;   
     grid-row: 1 / span 2;
-    color: white;
-    font-family: var(--font2);
-    font-weight: bold;
     font-size: 2.5rem;
 }
 
@@ -296,7 +374,6 @@ h3 {
     color: white;
     padding: 20px;
     border-radius: 22px;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     background-size: cover;
@@ -304,33 +381,14 @@ h3 {
     overflow: hidden;
 }
 
-.latest_deals_spring::before,
-.latest_deals_indoor::before,
-.latest_deals_backyard::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-    z-index: 0;
-}
-
-.latest_deals_spring > *,
-.latest_deals_indoor > *,
-.latest_deals_backyard > * {
-    position: relative;
-    z-index: 1;
-}
-
 /* Styles for Form */
 
 .form {
     margin-top: 130px;
-    text-align: center;
-    display: flex;
     flex-direction: column;   
     justify-content: center;
     background-image: url(/assets/The_Color.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(/assets/The_Color.jpg);
     background-size: cover;
     overflow: hidden;
     position: relative;
@@ -339,32 +397,14 @@ h3 {
     height: 550px;
 }
 
-.form::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    z-index: 0;
-}
-
-.form > * {
-    position: relative;
-    z-index: 1;
-}
-
 .form_title {
     margin: 50px 0 0 0;
-    font-family: var(--font2);
-    font-weight: bold;
     font-size: 50px;
 }
 
 .form_input {
     margin-top: 20px;
-    display: flex;
     justify-content: center;
-    font-family: var(--font1);
 }
 
 input {
@@ -377,7 +417,6 @@ input {
 }
 
 ::placeholder {
-    font-family: var(--font1);
     color: rgba(61, 52, 17, 0.5);
 }
 
@@ -390,15 +429,13 @@ input {
     margin: 0;
     height: 50px;
     font-weight: 600;
-    cursor: pointer;
+}
+
+.form_button:hover {
+  background-color: var(--olive_brown);
 }
 
 /* Styles for Footer */
-
-footer {
-    display: flex;
-    justify-content: space-between;
-}
 
 .footer_left {
     margin: 50px 0;
@@ -409,7 +446,6 @@ footer {
 }
 
 .footer_description {
-    font-family: var(--font1);
     font-size: 22px;
     color: rgba(85, 71, 16, 0.62);
     line-height: 27px;
@@ -422,28 +458,18 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 30px 100px;
-    font-family: var(--font1);
     font-size: 16px;
-    color: rgba(61, 52, 17, 0.59);
+    color: var(--deep_olive);
     margin: 50px 0;
 }
 
-.footer_link {
-    list-style: none;
-}
 .link {
-    text-decoration: none;
-    color: rgba(61, 52, 17, 0.59);
+    color: var(--deep_olive);
 }
 
 .social_links {
-    display: flex;
     gap: 30px;
     margin: 50px 0;
-}
-
-.social_link {
-    list-style: none;
 }
 
 .social_links_icons {

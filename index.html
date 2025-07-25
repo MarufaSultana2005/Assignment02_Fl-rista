@@ -11,23 +11,23 @@
 
 <body class="home">
     <header class="container">
-        <nav>
+        <nav class="flex space-between align-items-center">
             <div>
                 <img class="logo" src="./assets/Flōrista.png" alt="Flōrista logo">
             </div>
             <div>
-                <ul class="nav_links">
-                    <li class="links"><a class="nav_link active" href=""><b>Home</b></a></li>
-                    <li class="links"><a class="nav_link" href="">Shop</a></li>
-                    <li class="links"><a class="nav_link" href="">About us</a></li>
-                    <li class="links"><a class="nav_link cart" href=""><img class="cart" src="./assets/shopping-cart.png" alt="">Cart($53.99)</a></li>
+                <ul class="nav_links flex space-between align-items-center">
+                    <li class="links li-style-none"><a class="nav_link inter active flex align-items-center text-deco-none" href=""><b>Home</b></a></li>
+                    <li class="links li-style-none"><a class="nav_link inter flex align-items-center text-deco-none" href="">Shop</a></li>
+                    <li class="links li-style-none"><a class="nav_link inter flex align-items-center text-deco-none" href="">About us</a></li>
+                    <li class="links li-style-none"><a class="nav_link inter cart flex align-items-center text-deco-none" href=""><img class="cart" src="./assets/shopping-cart.png" alt="">Cart($53.99)</a></li>
                 </ul>
             </div>
         </nav>
-        <div class="banner">
+        <div class="banner flex space-between">
             <div class="banner_left">
-                <h1 class="fresh_flowers"><span class="always">ALWAYS</span> FRESH FLOWERS</h1>
-                <p class="banner_description">Surround yourself with the scent and color of nature’s finest. From timeless roses to rare exotic
+                <h1 class="fresh_flowers bold noto"><span class="always">ALWAYS</span> FRESH FLOWERS</h1>
+                <p class="banner_description inter">Surround yourself with the scent and color of nature’s finest. From timeless roses to rare exotic
                     blooms,
                     our fresh flower collection brings beauty to every moment—perfect for any occasion, big or small.
                 </p>
@@ -39,69 +39,77 @@
     </header>
     <main>
         <section class="our_plants container">
-            <div class="our_plants_header">
-                <h2 class="our_plants_title"><span class="our">Our</span> Plants</h2>
-                <p class="our_plants_description">Delight in the colors, textures, and fragrance of our fresh flower selection. From elegant roses to
+            <div class="our_plants_header center">
+                <h2 class="our_plants_title bold noto"><span class="our">Our</span> Plants</h2>
+                <p class="our_plants_description inter">Delight in the colors, textures, and fragrance of our fresh flower selection. From elegant roses to
                     unique exotic blooms, discover a variety of flowers handpicked to suit any mood or moment.</p>
             </div>
-            <div class="cards">
+            <div class="cards center inter">
                 <div class="plants">
                     <img src="./assets/Blushing_Rose.jpg" alt="Blushing Rose" class="flower_plants">
                     <h6>Blushing Rose</h6>
-                    <h5>$38.99</h5>
-                    <button class="add_to_cart">ADD TO CART</button>
+                    <h5 class="bold">$38.99</h5>
+                    <label for="cart-alert" class="add_to_cart pointer"><a href="#added">ADD TO CART</a></label>
                 </div>
                 <div class="plants">
                     <img src="./assets/Golden_Sunburst_Tulip.jpg" alt="Golden Sunburst Tulip" class="flower_plants">
                     <h6>Golden Sunburst Tulip</h6>
-                    <h5>$33.99</h5>
-                    <button class="add_to_cart">ADD TO CART</button>
+                    <h5 class="bold">$33.99</h5>
+                    <label for="cart-alert" class="add_to_cart pointer"><a href="#added">ADD TO CART</a></label>
                 </div>
                 <div class="plants">
                     <img src="./assets/SunnyDelightSunflower.jpg" alt="Sunny Delight Sunflower" class="flower_plants">
                     <h6>Sunny Delight Sunflower</h6>
-                    <h5>$45.99</h5>
-                    <button class="add_to_cart">ADD TO CART</button>
+                    <h5 class="bold">$45.99</h5>
+                    <label for="cart-alert" class="add_to_cart pointer"><a href="#added">ADD TO CART</a></label>
                 </div>
                 <div class="plants">
                     <img src="./assets/PureEleganceLily.jpg" alt="Pure Elegance Lily" class="flower_plants">
                     <h6>Pure Elegance Lily</h6>
-                    <h5>$39.99</h5>
-                    <button class="add_to_cart">ADD TO CART</button>
+                    <h5 class="bold">$39.99</h5>
+                    <label for="cart-alert" class="add_to_cart pointer"><a href="#added">ADD TO CART</a></label>
                 </div>
                 <div class="plants">
                     <img src="./assets/MysticOrchid.jpg" alt="Mystic Orchid" class="flower_plants">
                     <h6>Mystic Orchid</h6>
-                    <h5>$53.99</h5>
-                    <button class="add_to_cart">ADD TO CART</button>
+                    <h5 class="bold">$53.99</h5>
+                    <label for="cart-alert" class="add_to_cart pointer"><a href="#added">ADD TO CART</a></label>
                 </div>
                 <div class="plants">
                     <img src="./assets/Morning_Dew_Daisy.jpg" alt="Morning Dew Daisy" class="flower_plants">
                     <h6>Morning Dew Daisy</h6>
-                    <h5>$26.99</h5>
-                    <button class="add_to_cart">ADD TO CART</button>
+                    <h5 class="bold">$26.99</h5>
+                    <label for="cart-alert" class="add_to_cart pointer"><a href="#added">ADD TO CART</a></label>
                 </div>
                 <div class="plants">
                     <img src="./assets/VelvetCarnation.jpg" alt="Velvet Carnation" class="flower_plants">
                     <h6>Velvet Carnation</h6>
-                    <h5>$28.99</h5>
-                    <button class="add_to_cart">ADD TO CART</button>
+                    <h5 class="bold">$28.99</h5>
+                    <label for="cart-alert" class="add_to_cart pointer"><a href="#added">ADD TO CART</a></label>
                 </div>
                 <div class="plants">
                     <img src="./assets/AutumnChrysanthemum.jpg" alt="Autumn Chrysanthemum" class="flower_plants">
                     <h6>Autumn Chrysanthemum</h6>
-                    <h5>$35.99</h5>
-                    <button class="add_to_cart">ADD TO CART</button>
+                    <h5 class="bold">$35.99</h5>
+                    <label for="cart-alert" class="add_to_cart pointer"><a href="#added">ADD TO CART</a></label>
+                </div>
+                <input type="checkbox" id="cart-alert" hidden>
+                <div class="alert-overlay">
+                    <div class="alert-box">
+                    <p>Flower Added to Cart!</p>
+                    <label for="cart-alert" class="close-btn">×</label>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="flower_and_plants_lover container">
+        <section class="flower_and_plants_lover container flex space-between align-items-center">
             <div class="flower_lover_left">
                 <img src="./assets/5184e93b-5c62-45cf-bbef-ae653b5cb26b.jpeg" alt="flower_shop_image" class="flower_lover_image">
+                <!-- <img src="./assets/trusted-badge.png" alt="Trusted Seller" class="trusted-badge" /> -->
             </div>
             <div class="flower_lover_right">
-                <div><h3>Flower & Plants Lover</h3></div>
-                <div class="flower_lover_description">
+                <div><h3 class="noto bold">Flower & Plants Lover</h3></div>
+                <div class="flower_lover_description inter">
                     <ul>
                         <li>Our expert florists carefully select each flower and plant daily to ensure vibrant colors, rich
                             fragrances, and long-lasting freshness straight from the garden to your hands.</li>
@@ -113,60 +121,60 @@
                 </div>
             </div>
         </section>
-        <section class="latest_deals container">
+        <section class="latest_deals center container">
             <div class="latest_deals_header">
-                <h2 class="latest_deals_title"><span class="latest">Latest</span> Deals</h2>
-                <p class="latest_deals_description">Discover fresh savings on your favorite flowers and plants! Grab them at great prices! Don’t miss
+                <h2 class="latest_deals_title bold noto"><span class="latest">Latest</span> Deals</h2>
+                <p class="latest_deals_description inter">Discover fresh savings on your favorite flowers and plants! Grab them at great prices! Don’t miss
                     out—these special offers are for a limited time only.</p>
             </div>
             <div class="latest_deals_offers">
-                <div class="latest_deals_spring">
+                <div class="latest_deals_spring bold noto flex">
                     <h4>60% Off | Spring Bloom</h4>
-                    <a class="latest_deals_link" href="">Shop Now</a>
+                    <a class="latest_deals_link inter" href="">Shop Now</a>
                 </div>
-                <div class="latest_deals_indoor">
+                <div class="latest_deals_indoor bold noto flex">
                     <h4>30% Off | Indoor Plant</h4>
-                    <a class="latest_deals_link" href="">Shop Now</a>
+                    <a class="latest_deals_link inter" href="">Shop Now</a>
                 </div>
-                <div class="latest_deals_backyard">
+                <div class="latest_deals_backyard bold noto flex">
                     <h4>25% Off | Backyard Bloom</h4>
-                    <a class="latest_deals_link backyard" href="">Shop Now</a>
+                    <a class="latest_deals_link inter backyard" href="">Shop Now</a>
                 </div>
             </div>
         </section>
-        <section class="form">
-            <h2 class="form_title">Step Into the Color</h2>
-            <div class="form_input">
+        <section class="form center flex">
+            <h2 class="form_title bold noto">Step Into the Color</h2>
+            <div class="form_input inter flex">
                 <input type="email" placeholder="Write email">
-                <button type="submit" class="form_button">Subscribe</button>
+                <button type="submit" class="form_button pointer">Subscribe</button>
             </div>
         </section>
     </main>
-    <footer class="container">
+    <footer class="container flex space-between">
         <div class="footer_left">
             <img class="footer_logo" src="./assets/Flōrista.png" alt="Flōrista logo">
-            <p class="footer_description">Bringing beauty to your doorstep, one bloom at a time.</p>
+            <p class="footer_description inter">Bringing beauty to your doorstep, one bloom at a time.</p>
         </div>
         <div>
-            <ul class="footer_links">
-                <li class="footer_link"><a class="link" href="">Home</a></li>
-                <li class="footer_link"><a class="link" href="">Features</a></li>
-                <li class="footer_link"><a class="link" href="">About Us</a></li>
-                <li class="footer_link"><a class="link" href="">Pricing</a></li>
-                <li class="footer_link"><a class="link" href="">Blog</a></li>
-                <li class="footer_link"><a class="link" href="">Privacy Policy</a></li>
-                <li class="footer_link"><a class="link" href="">FAQ</a></li>
-                <li class="footer_link"><a class="link" href="">Terms of Service</a></li>
-                <li class="footer_link"><a class="link" href="">Contact Us</a></li>
-                <li class="footer_link"><a class="link" href="">Help Center</a></li>
+            <ul class="footer_links inter">
+                <li class="footer_link li-style-none"><a class="link text-deco-none" href="">Home</a></li>
+                <li class="footer_link li-style-none"><a class="link text-deco-none" href="">Features</a></li>
+                <li class="footer_link li-style-none"><a class="link text-deco-none" href="">About Us</a></li>
+                <li class="footer_link li-style-none"><a class="link text-deco-none" href="">Pricing</a></li>
+                <li class="footer_link li-style-none"><a class="link text-deco-none" href="">Blog</a></li>
+                <li class="footer_link li-style-none"><a class="link text-deco-none" href="">Privacy Policy</a></li>
+                <li class="footer_link li-style-none"><a class="link text-deco-none" href="">FAQ</a></li>
+                <li class="footer_link li-style-none"><a class="link text-deco-none" href="">Terms of Service</a></li>
+                <li class="footer_link li-style-none"><a class="link text-deco-none" href="">Contact Us</a></li>
+                <li class="footer_link li-style-none"><a class="link text-deco-none" href="">Help Center</a></li>
             </ul>
         </div>
         <div>
-            <ul class="social_links">
-                <li class="social_link"><a class="social_link" href=""><img class="social_links_icons" src="./assets/linkedin.png" alt="LinkedIn"></a></li>
-                <li class="social_link"><a class="social_link" href=""><img class="social_links_icons" src="./assets/twitter.png" alt="Twitter"></a></li>
-                <li class="social_link"><a class="social_link" href=""><img class="social_links_icons" src="./assets/facebook.png" alt="Facebook"></a></li>
-                <li class="social_link"><a href=""><img class="social_links_icons" src="./assets/youtube.png" alt="YouTube"></a></li>
+            <ul class="social_links flex">
+                <li class="social_link li-style-none"><a class="social_link" href=""><img class="social_links_icons" src="./assets/linkedin.png" alt="LinkedIn"></a></li>
+                <li class="social_link li-style-none"><a class="social_link" href=""><img class="social_links_icons" src="./assets/twitter.png" alt="Twitter"></a></li>
+                <li class="social_link li-style-none"><a class="social_link" href=""><img class="social_links_icons" src="./assets/facebook.png" alt="Facebook"></a></li>
+                <li class="social_link li-style-none"><a href=""><img class="social_links_icons" src="./assets/youtube.png" alt="YouTube"></a></li>
             </ul>
         </div>
     </footer>

@@ -93,7 +93,7 @@ nav {
 }
 
 .banner_description {
-    width: 540px;
+    width: 580px;
     margin-top: 12px;
     font-family: var(--font1);
     font-size: 22px;
@@ -211,4 +211,112 @@ h3 {
     font-family: var(--font1);
     font-size: 22px;
     line-height: 27px;
+}
+
+/* Styles for Latest Deals */
+
+.latest_deals {
+    margin: 130px auto 0 auto;
+    text-align: center;
+    width: 1140px;
+}
+
+.latest_deals_title {
+    font-family: var(--font2);
+    font-weight: bold;
+    font-size: 50px;
+    color: var(--olive_brown);
+}
+
+.latest {
+    color: var(--gold);
+}
+
+.latest_deals_description {
+    width: 900px;
+    font-family: var(--font1);
+    font-size: 22px;
+    line-height: 27px;
+    color: rgba(59, 54, 35, 0.5);
+    margin: 0 auto 120px auto;
+    margin-bottom: 100px;
+}
+
+.latest_deals_offers {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 200px 230px;
+    gap: 30px;
+    
+}
+
+.latest_deals_link {
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: var(--font1);
+    margin-top: 5px;
+}
+
+.backyard {
+    font-size: 28px;
+}
+
+.latest_deals_spring {
+    background-image: url(/assets/SpringBloom.jpg);
+    color: white;
+    font-family: var(--font2);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.latest_deals_indoor {
+    background-image: url(/assets/IndoorPlants.webp);
+    color: white;
+    font-family: var(--font2);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.latest_deals_backyard {
+    background-image: url(/assets/Backyard_Bloom.jpg);
+    grid-column: 2;   
+    grid-row: 1 / span 2;
+    color: white;
+    font-family: var(--font2);
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.latest_deals_spring,
+.latest_deals_indoor,
+.latest_deals_backyard {
+    position: relative;
+    color: white;
+    padding: 20px;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.latest_deals_spring::before,
+.latest_deals_indoor::before,
+.latest_deals_backyard::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.latest_deals_spring > *,
+.latest_deals_indoor > *,
+.latest_deals_backyard > * {
+    position: relative;
+    z-index: 1;
 }

@@ -392,3 +392,60 @@ input {
     font-weight: 600;
     cursor: pointer;
 }
+
+/* Styles for Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_left {
+    margin: 50px 0;
+}
+
+.footer_logo {
+    width: 160px;
+}
+
+.footer_description {
+    font-family: var(--font1);
+    font-size: 22px;
+    color: rgba(85, 71, 16, 0.62);
+    line-height: 27px;
+    width: 360px;
+    margin-top: 16px;
+}
+
+.footer_links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 30px 100px;
+    font-family: var(--font1);
+    font-size: 16px;
+    color: rgba(61, 52, 17, 0.59);
+    margin: 50px 0;
+}
+
+.footer_link {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+    color: rgba(61, 52, 17, 0.59);
+}
+
+.social_links {
+    display: flex;
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.social_link {
+    list-style: none;
+}
+
+.social_links_icons {
+    width: 30px;
+}

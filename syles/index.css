@@ -195,7 +195,7 @@ h5 {
     border-radius: 15px;
     padding: 20px;
     margin-bottom: 10px;
-    background-color: var(--gold);
+    background-color: var(--olive_brown);
     cursor: pointer;
     display: inline-block;
     font-weight: bold;
@@ -216,7 +216,7 @@ h5 {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
-    z-index: 1000;
+    z-index: 10;
 }
 
 .alert-box {
@@ -294,6 +294,12 @@ h3 {
     color: rgba(59, 54, 35, 0.63);
     font-size: 22px;
     line-height: 27px;
+}
+
+.flower_lover_list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 /* Styles for Latest Deals */

@@ -1,0 +1,399 @@
+
+
+@media screen and (max-width: 576px) {
+   
+   body {
+    width: 576px;
+}
+    .container {
+    max-width: 85%;
+    margin: 0 auto;
+} 
+    /* Nav Styles */
+
+nav {
+    margin: 5vh 1px 54px 0;
+    height: 140px;
+}
+
+.hide {
+    display: none;
+}
+
+.logo {
+    width: 40%;
+}
+
+.nav_links {
+    gap: 48px;
+}
+
+.nav_link {
+    gap: 5px;
+    color: var(--mushroom_beige);
+}
+
+.active {
+    color: var(--rich_olive_brown);
+}
+
+.cart {
+    width: 22px;
+    color: var(--dark_olive_brown);
+}
+
+/* Banner Styles */
+
+.banner {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    margin: 0;
+    margin-bottom: 20%;
+}
+
+.fresh_flowers {
+    font-size: 2rem;
+    color: var(--gold);
+    margin-top: 8%;
+}
+
+.always {
+    color: var(--olive_brown);
+}
+
+.banner_description {
+    width: 580px;
+    margin-top: 12px;
+    font-size: 1rem;
+    line-height: 27px;
+    color: rgba(88, 78, 45, 0.72);
+}
+
+.banner_left {
+    width: 80%;
+}
+
+.banner_image {
+    display: block;
+    width: 100vw;
+    border-radius: 0;
+}
+/* Our Plants Styles */
+
+.our_plants_header {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.our_plants_title {
+    font-size: 1.8rem;
+    color: var(--olive_brown);
+}
+
+.our {
+    color: var(--gold);
+}
+
+.our_plants_description {
+    font-size: 22px;
+    line-height: 27px;
+    color: rgba(88, 78, 45, 0.89);
+    margin-top: 16px;
+    margin-bottom: 50px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1%;
+
+}
+
+.flower_plants {
+    width: 70%;
+    height: 60%;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: block;
+}
+
+h6 {
+    font-size: .9rem;
+    margin-top: 20px;
+}
+h5 {
+    font-size: 1.1rem;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.add_to_cart {
+    width: 70%;
+    height: 5vh;
+    border-radius: 10px;
+    padding: 5%;
+    margin-bottom: 0;
+    font-size: .9rem;
+    
+}
+
+.add_to_cart:hover {
+    background-color: var(--olive_brown);
+}
+
+.alert-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.1s ease;
+    z-index: 1000;
+}
+
+.alert-box {
+    padding: 5%;
+    border-radius: 5px;
+    font-size: .9rem;
+    min-width: 50%;
+}
+.close-btn {
+    font-size: 1rem;
+}
+
+.latest_deals_spring,
+.latest_deals_indoor,
+.latest_deals_backyard {
+    position: relative;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+/* Styles for Flowers & Plants Lover */
+
+.flower_and_plants_lover {
+    flex-direction: column;
+    margin: 0;
+    margin-top: 550px;
+}
+.flower_lover_image {
+    width: 95%;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+}
+.trusted-badge {
+    display: none;
+}
+
+h3 {
+    width: 60%;
+    font-size: 1.7rem;
+    margin: 5%;
+}
+
+.flower_lover_description {
+    width: 490px;
+    margin: 0;
+    margin-left: 100px;
+    color: rgba(59, 54, 35, 0.63);
+    font-size: 22px;
+    line-height: 27px;
+}
+
+/* Styles for Form */
+
+.form {
+    margin: 10% 0;  
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 20px;
+    height: 200px;
+}
+
+.form_title {
+    margin-bottom: 3%;
+    font-size: 1.5rem;
+}
+
+.form_input {
+    margin: 0;
+}
+
+input {
+    padding: 1% 5%;
+    width: 45%;
+    height: auto;
+    border-radius: 5px 0 0 5px;
+}
+
+::placeholder {
+    color: rgba(61, 52, 17, 0.5);
+}
+
+.form_button {
+    padding: 1% 5%;
+
+    border-radius: 0 5px 5px 0;
+
+    height: 50px;
+    font-weight: 600;
+}
+/* Styles for Footer */
+
+footer {
+    width: 95%;
+    flex-direction: column;
+}
+
+.footer_left {
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.footer_logo {
+    width: 160px;
+}
+
+.footer_description {
+    font-size: 1.2rem;
+    width: 60%;
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 1rem;
+    margin: 0;
+    margin-left: 5%;
+}
+.social_links {
+    margin: 5%;
+}
+/* Styles for Latest Deals */
+
+.latest_deals {
+    margin: 5%;
+    width: 90%;
+}
+
+.latest_deals_title {
+    font-size: 50px;
+    color: var(--olive_brown);
+}
+
+.latest {
+    color: var(--gold);
+}
+
+.latest_deals_description {
+    width: 100%;
+    font-size: 22px;
+    line-height: 27px;
+    color: rgba(59, 54, 35, 0.5);
+    margin: 0 auto 120px auto;
+    margin-bottom: 100px;
+}
+
+.latest_deals_offers {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.latest_deals_link {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.backyard {
+    font-size: 1rem;
+}
+
+.latest_deals_spring {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(/assets/SpringBloom.jpg);
+    font-size: 1.2rem;
+}
+
+.latest_deals_indoor {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/IndoorPlants.webp);
+    font-size: 1.2rem;
+}
+
+.latest_deals_backyard {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/assets/Backyard_Bloom.jpg);
+    grid-column: 2;   
+    grid-row: 1 / span 2;
+    font-size: 1.2rem;
+}
+}
+
+
+
+
+
+/* Common Styles */
+
+.inter {
+    font-family: "Inter", sans-serif; 
+}
+
+.noto {
+    font-family: "Noto Serif", serif;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.center {
+    text-align: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.text-deco-none {
+    text-decoration: none;
+}
+
+.li-style-none {
+    list-style: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

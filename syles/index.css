@@ -184,36 +184,26 @@ h5 {
     margin-bottom: 20px;
 }
 
+.add {
+    text-decoration: none;
+    color: white;
+}
+
 .add_to_cart {
     width: 100%;
     border: none;
     border-radius: 15px;
-    height: 50px;
+    padding: 20px;
     margin-bottom: 10px;
-    font-weight: 750;
-    color: white;
-    background-color: var(--olive_brown);
-    transition: background-color 0.3s ease;
-}
-
-.add_to_cart:hover {
-  background-color: var(--gold);
-}
-
-.add_to_cart {
-    padding: 10px 20px;
-    background: var(--gold);
-    color: white;
-    border-radius: 5px;
+    background-color: var(--gold);
     cursor: pointer;
     display: inline-block;
-    text-align: center;
     font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
 .add_to_cart:hover {
-    background-color: var(--olive_brown);
+    background-color: var(--gold);
 }
 
 .alert-overlay {
@@ -387,8 +377,7 @@ h3 {
     margin-top: 130px;
     flex-direction: column;   
     justify-content: center;
-    background-image: url(/assets/The_Color.jpg);
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(/assets/The_Color.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(/assets/The_Color.jpg);
     background-size: cover;
     overflow: hidden;
     position: relative;

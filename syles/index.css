@@ -1,4 +1,6 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 :root {
     /* --inter: "Inter", sans-serif; */
@@ -251,32 +253,22 @@ h5 {
     margin: 150px auto 0 auto;
 }
 
+.flower_lover_left {
+    position: relative;
+}
+
 .flower_lover_image {
     width: 540px;
     border-radius: 15px;
 }
 
-/* .trusted-badge {
+.trusted-badge {
   position: absolute;
-  top: 100px;
-  right: 100px;
-  width: 80px;
-  height: 80px;
-  z-index: 10;
+  top: -100px;
+  right: -80px;
+  width: 286px;
+  filter: drop-shadow(-4px 10px 3px rgba(0, 0, 0, 0.25));
 }
-
-.trusted-badge::after {
-  content: '';
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  width: 80px;
-  height: 80px;
-  background-image: url('/assets/trusted-badge.png');
-  background-size: contain;
-    background-repeat: no-repeat;
-  z-index: 2;
-}  */
 
 h3 {
     width: 540px;
@@ -348,16 +340,16 @@ h3 {
 
 .latest_deals_spring {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(/assets/SpringBloom.jpg);
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .latest_deals_indoor {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/IndoorPlants.webp);
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .latest_deals_backyard {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/assets/Backyard_Bloom.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(/assets/Backyard_Bloom.jpg);
     grid-column: 2;   
     grid-row: 1 / span 2;
     font-size: 2.5rem;

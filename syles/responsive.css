@@ -176,15 +176,12 @@ h3 {
     font-size: 1.5rem;
 }
 .latest_deals_spring {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(../assets/SpringBloom.jpg);
     font-size: 1.8rem;
 }
 .latest_deals_indoor {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/IndoorPlants.webp);
     font-size: 1.8rem;
 }
 .latest_deals_backyard {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url(../assets/Backyard_Bloom.jpg);
     font-size: 1.8rem;
     padding: 28% 2%;
 }

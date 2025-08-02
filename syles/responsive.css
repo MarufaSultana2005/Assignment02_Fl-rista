@@ -15,7 +15,7 @@ nav {
     width: 20%;
     margin: 15vw 5vw;
     height: 5vh;
-    gap: 170%;
+    gap: 150%;
 }
 
 .shopping_cart{
@@ -39,7 +39,7 @@ nav {
     .fresh_flowers {
         font-size: 2rem;
         margin-top: 5%;
-        width: 70vw;
+        width: 80vw;
     }
     .banner_description {
         width: 90vw;
@@ -77,7 +77,7 @@ nav {
 }
 .flower_plants {
     width: 45vw;
-    height: 270px;
+    height: 250px;
     margin: 0 auto;
     border-radius: 3%;
 }

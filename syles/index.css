@@ -344,17 +344,17 @@ h3 {
 }
 
 .latest_deals_spring {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(/assets/SpringBloom.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../assets/SpringBloom.jpg);
     font-size: 1.4rem;
 }
 
 .latest_deals_indoor {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/IndoorPlants.webp);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/IndoorPlants.webp);
     font-size: 1.4rem;
 }
 
 .latest_deals_backyard {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(/assets/Backyard_Bloom.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(../assets/Backyard_Bloom.jpg);
     grid-column: 2;   
     grid-row: 1 / span 2;
     font-size: 2.5rem;
@@ -380,7 +380,7 @@ h3 {
     margin-top: 130px;
     flex-direction: column;   
     justify-content: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(/assets/The_Color.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(../assets/The_Color.jpg);
     background-size: cover;
     overflow: hidden;
     position: relative;

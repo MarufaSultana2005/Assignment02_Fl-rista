@@ -96,6 +96,10 @@ nav {
     color: var(--mushroom_beige);
 }
 
+.shopping_cart{
+    list-style: none;
+}
+
 .active {
     color: var(--rich_olive_brown);
 }
@@ -202,6 +206,7 @@ h5 {
     display: inline-block;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    color: white;
 }
 
 .add_to_cart:hover {

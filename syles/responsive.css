@@ -39,7 +39,7 @@ nav {
     .fresh_flowers {
         font-size: 2rem;
         margin-top: 5%;
-        width: 80vw;
+        width: 70vw;
     }
     .banner_description {
         width: 90vw;
@@ -144,9 +144,10 @@ h3 {
 
 /* Styles for Latest Deals */
 .latest_deals {
+    display: block;
     margin: 3%;
     margin-top: 15%;
-    margin-bottom: 90vh;
+    margin-bottom: 50%;
     width: 97vw;
 }
 .latest_deals_title {
@@ -203,7 +204,8 @@ h3 {
 
 /* Styles for Form */
 .form {
-    margin: 10% 0;
+    display: block;
+    margin: 0;
     width: 100%;
     height: 50vh;  
     background-size: cover;
